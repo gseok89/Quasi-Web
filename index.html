@@ -1,0 +1,86 @@
+<!-- 주석 테스트 Ctrl + / -->
+<!-- 사이드바 토글 Ctrl + B -->
+<!-- 빠른 행 이동 Ctrl + G -->
+<!-- 일치 단어 선택 Ctrl + D -->
+<!-- 한번에 일치 단어 선택 Ctrl + Shift + L -->
+<!-- 라인 이동 Alt + 화살표 -->
+<!-- 페이지 상단/하단 이동 Ctrl + Home/End -->
+<!-- 열린 탭 이동 Ctrl + Pgup/Pgdwn -->
+<!-- 바로 다음 행 삽입 Ctrl + Enter -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TRACES OF QUASI</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="wrap">
+            <p class="intro-text">
+                THE<br>TRACES<br>OF<br>QUASI
+            </p>
+        </div>
+    </div> -->
+    <!-- 스크립트 -->
+    <div class="title-text">THE<br>TRACES<br>OF<br>QUASI</div>
+    <div class="sidebar-btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <ul>
+            <li>
+                <a href="#" class="sub-btn">AN ENCOUNTER</a>
+                <ul class="sub-show">
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">QUESTIONS</a>
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">DISAPPEAR</a>
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">A GUIDE BOOK</a>
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">NEWS</a>
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </nav>
+    <script>
+        $('.sidebar-btn').click(function(){
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.sub-btn').click(function(){
+            $('nav ul .sub-show').toggleClass("show");
+        });
+    </script>
+    <!-- <script src="./main.js"></script> -->
+</body>
+</html>

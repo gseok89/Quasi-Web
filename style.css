@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(26, 57, 142);
+}
+
+.container{
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+.sidebar-btn{
+    position: absolute;
+    right:2.5%;
+    top:5%;
+    cursor: pointer;
+    transition: right 0.5s ease;
+}
+
+.sidebar-btn.click{
+    right: 52%;
+}
+
+.sidebar-btn span{
+    color: white;
+    font-size: 3rem;
+}
+
+.sidebar-btn.click span:before{
+    content: '\f00d';
+}
+
+.sidebar{
+    background-color:rgba(211, 209, 209, 0.822);
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    right:-50%;
+    /* right:0%; */
+    transition: right 0.5s ease;
+}
+
+.sidebar.show{
+    right:0%;
+}
+
+nav ul{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li{
+    line-height: 60px;
+    border-bottom: 1px solid rgb(43, 43, 245);
+}
+
+nav ul li a{
+    position: relative;
+    color:rgb(10, 67, 223);
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'SpoqaHanSansRegular';
+    padding-left: 20px;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+nav ul li a:hover{
+    color: white;
+    background-color: rgb(25, 25, 204);
+    border-left-color: white;
+}
+
+nav ul ul{
+    position: static;
+    display: none;
+}
+
+nav ul .sub-show.show{
+    display: block;
+}
+
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+nav ul ul li a{
+    font-size: 1.5rem;
+}
+
+.intro-text{
+    font-size: 10rem;
+    color : white;
+    text-align: right;
+    font-family: 'SpoqaHanSansBold';
+    line-height: 1.3em;
+}
+
+.title-text{
+    position: fixed;
+    right: 5%;
+    font-size: 10rem;
+    color : white;
+    text-align: right;
+    font-family: 'SpoqaHanSansBold';
+    line-height: 1.3em;
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansBold';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('./font/Spoqa\ Han\ Sans\ Bold.woff2') format('woff2'),
+    url('./font/Spoqa\ Han\ Sans\ Bold.woff') format('woff'),
+    url('./font/Spoqa\ Han\ Sans\ Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansRegular';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('./font/Spoqa\ Han\ Sans\ Regular.woff2') format('woff2'),
+    url('./font/Spoqa\ Han\ Sans\ Regular.woff') format('woff'),
+    url('./font/Spoqa\ Han\ Sans\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansLight';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Light'),
+    url('./font/Spoqa\ Han\ Sans\ Light.woff2') format('woff2'),
+    url('./font/Spoqa\ Han\ Sans\ Light.woff') format('woff'),
+    url('./font/Spoqa\ Han\ Sans\ Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansThin';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Thin'),
+    url('./font/Spoqa\ Han\ Sans\ Thin.woff2') format('woff2'),
+    url('./font/Spoqa\ Han\ Sans\ Thin.woff') format('woff'),
+    url('./font/Spoqa\ Han\ Sans\ Thin.ttf') format('truetype');
+}
+
+
