@@ -1,6 +1,7 @@
 $('.overlay').click(function(){
     $(this).toggleClass("click");
     $('.sidebar').toggleClass("show");
+    $('.popup').toggleClass("show");
 });
 $('.sub-btn').click(function(){
     $('nav ul .sub-show').toggleClass("show");
