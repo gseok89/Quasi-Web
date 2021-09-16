@@ -5,18 +5,18 @@
 }
 
 body{
-    background-color: rgb(26, 57, 142);
+    background-color: rgb(60, 81, 139);
 }
 
 .title-text{
-    display: flex;
+    display: none;
     font-size: 10rem;
     color : white;
     text-align: right;
     font-family: 'SpoqaHanSansBold';
     line-height: 1.3em;
     float: right;
-    margin-right: 20px;
+    margin-right: 50px;
     height: 100%;
     vertical-align: middle;
 }
