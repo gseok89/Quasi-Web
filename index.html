@@ -21,9 +21,11 @@
 </head>
 <body>
     <div class="title-text">THE<br>TRACES<br>OF<br>QUASI</div>
-    <div class="sidebar-btn">
+    <!-- <div class="sidebar-btn">
         <span class="fas fa-bars"></span>
-    </div>
+    </div> -->
+    
+    <div class="overlay"></div>
     <nav class="sidebar">
         <ul>
             <li>
@@ -65,15 +67,7 @@
 
         </ul>
     </nav>
-    <script>
-        $('.sidebar-btn').click(function(){
-            $(this).toggleClass("click");
-            $('.sidebar').toggleClass("show");
-        });
-        $('.sub-btn').click(function(){
-            $('nav ul .sub-show').toggleClass("show");
-        });
-    </script>
+    
     <script src="./main.js"></script>
 </body>
 </html>
