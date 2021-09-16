@@ -9,7 +9,7 @@ body{
 }
 
 .title-text{
-    display: none;
+    display: flex;
     font-size: 10rem;
     color : white;
     text-align: right;
