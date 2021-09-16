@@ -8,20 +8,17 @@ body{
     background-color: rgb(26, 57, 142);
 }
 
-.container{
-    margin: 0 auto;
-    box-sizing: border-box;
+.title-text{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.wrap{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    margin-right: 3%;
-    margin-top: 2%;
+    font-size: 10rem;
+    color : white;
+    text-align: right;
+    font-family: 'SpoqaHanSansBold';
+    line-height: 1.3em;
+    float: right;
+    margin-right: 20px;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .sidebar-btn{
@@ -106,23 +103,9 @@ nav ul ul li a{
     font-size: 1.5rem;
 }
 
-.intro-text{
-    font-size: 10rem;
-    color : white;
-    text-align: right;
-    font-family: 'SpoqaHanSansBold';
-    line-height: 1.3em;
-}
 
-.title-text{
-    position: fixed;
-    right: 5%;
-    font-size: 10rem;
-    color : white;
-    text-align: right;
-    font-family: 'SpoqaHanSansBold';
-    line-height: 1.3em;
-}
+
+
 
 @font-face {
     font-family: 'SpoqaHanSansBold';
