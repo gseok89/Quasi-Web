@@ -1,50 +1,25 @@
 $('.overlay').click(function(){
     $(this).toggleClass("click");
     $('.sidebar').toggleClass("show");
-    $('.popup').toggleClass("show");
+    randPos();
+    // $('.popup').toggleClass("show");
 });
 $('.sub-btn').click(function(){
     $('nav ul .sub-show').toggleClass("show");
 });
 
-// var body = document.body;
+//랜덤 팜업 함수
+function randPos(){
+  var bodyWidth = $('.overlay-left').width();
+  var bodyHeight = $('.overlay-left').height();
+  var randPosX = Math.floor((Math.random()*bodyWidth));
+  var randPosY = Math.floor((Math.random()*bodyHeight));
+  
+  $('.popup').css('left', randPosX);
+  $('.popup').css('top', randPosY);
+}
 
-// document.addEventListener('mousemove', (e)=>
-// {
-//     var elem = document.createElement('div');
-//     elem.setAttribute('class', 'trail')
-//     elem.setAttribute('style','left: ${e.clientX - 10}px; top: ${e.clientY - 10}px;');
-
-//     elem.onanimationend=()=>
-//     {
-//         elem.remove();
-//     }
-
-//     body.insertAdjacentElement('beforeend',elem);
-// });
-
-// let circles = [];
-// function createCircle() {
-//   for (let x = 0; x < 12; x++) {
-//     let c = document.createElement('div');
-//     c.classList.add('trail');
-//     document.body.appendChild(c);
-//     circles.push(c);
-//   }
-// }
-// createCircle();
-
-
-// let currentCircle = 0;
-
-// function trail(e) {
-//   let circle = circles[currentCircle];
-//   circle.style.left = `${e.pageX}px`;
-//   circle.style.top = `${e.pageY}px`;
-//   currentCircle = (currentCircle + 1) % circles.length;
-// }
-
-// addEventListener('mousemove', trail);
+//마우스 트레일
 document.addEventListener('mousemove', circleTrail);
 
 let colors = ['#00FFFF', '#DC143C', '	#7CFC00', '#6A5ACD', '#FF8C00'];

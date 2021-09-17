@@ -15,6 +15,13 @@ body{
     z-index: 998;
 }
 
+.overlay-left{
+    position: fixed;
+    width: 50%;
+    height: 90%;
+    z-index: 997;
+}
+
 .title-text{
     display: flex;
     font-size: 10rem;
@@ -123,7 +130,7 @@ nav ul ul li a{
     margin: 15px;
     font-size: 20px;
     background-color: #212121;
-    display: none;
+    display: flex;
 }
 
 .popup.show{
