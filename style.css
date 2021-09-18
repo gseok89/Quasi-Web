@@ -4,10 +4,41 @@
     box-sizing: border-box;
 }
 
+*:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
 body{
     background-color: rgb(42, 87, 211);
 }
 
+/*All Examples*/
+[id*='grid-']:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Example One */
+  [class*='grid-'] {
+    float: left;
+  }
+
+.grid-1 {
+    width: 100%;
+    height: 100%;
+  }
+.grid-1-item {
+    width: 20px;
+    height: 20px;
+    transition: background-color 5s;
+  }
+  .grid-1-item:hover {
+    background-color: white;
+    transition: background-color 0s;
+  }
 .overlay{
     position: fixed;
     width: 100%;
