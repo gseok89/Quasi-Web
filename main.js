@@ -47,10 +47,25 @@ function randPos(){
 // }
 
 $(document).ready(function() {
-  var el1 = $(".grid-1-item");
-  for (i=0 ; i<1000 ; i++) {
-    var newEl1 = el1.clone();
-    $(".grid-1").append(newEl1);
+  // var el1 = $(".grid-1-item");
+  // for (i=0 ; i<1000 ; i++) {
+  //   var newEl1 = el1.clone();
+  //   $(".grid-1").append(newEl1);
+  // }
+
+
+  var $grid = $('.grid-1')
+  var $gridItem = $('.grid-1-item')
+  var gridItemHeight = $gridItem.height()
+  var gridItemWidth = $gridItem.width()
+  
+  var horzCount = Math.floor($grid.width() / gridItemWidth)
+  var vertCount = Math.floor($grid.height() / gridItemHeight)
+  
+  var totalGridItems = horzCount * vertCount
+  for (var i = 0; i < totalGridItems; i++) {
+    var $gridItemClone = $gridItem.clone();
+    $grid.append($gridItemClone);
   }
 });
 
