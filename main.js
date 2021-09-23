@@ -53,6 +53,44 @@ $(document).ready(function() {
   //   $(".grid-1").append(newEl1);
   // }
 
+  // var gridNumber=16
+  // var gridSize=600/gridNumber;
+
+  // var $grid = $('#box')
+  // var $gridItem = $('.grid')
+  // var gridItemHeight = $gridItem.height()
+  // var gridItemWidth = $gridItem.width()
+  
+  // var horzCount = Math.floor($grid.width() / gridItemWidth)
+  // var vertCount = Math.floor($grid.height() / gridItemHeight)
+  
+  // var totalGridItems = horzCount * vertCount
+
+
+
+  // /*populate with divs*/
+
+  // var func= function(){
+  //   for(var i=0; i<totalGridItems;i++) {
+  // $('#box').append("<div class ='grid'></div>");
+
+  // }
+
+  // }
+
+  // func();
+
+
+  // var high= function(){
+  // $('.grid').hover(function() {
+  // /*
+  //   $('.highlight').css({backround-color:"#' + ("000000" + Math.random().toString(16).slice(2, 8).toUpperCase()).slice(-6)"});
+  // */
+  //   $(this).addClass('highLight');
+  // });
+  // }
+  // high();
+
 
   var $grid = $('.grid-1')
   var $gridItem = $('.grid-1-item')
@@ -67,5 +105,13 @@ $(document).ready(function() {
     var $gridItemClone = $gridItem.clone();
     $grid.append($gridItemClone);
   }
+
+  var high= function(){
+  $('.grid-1-item').hover(function() {
+
+    $(this).addClass('grid-1-item-highlight');
+  });
+  }
+  high();
 });
 
