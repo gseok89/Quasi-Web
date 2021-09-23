@@ -146,22 +146,19 @@ nav ul{
 }
 
 nav ul li{
-    line-height: 60px;
+    height: 60px;
     border-bottom: 2px solid rgb(26, 57, 142);
-}
-
-nav ul li a{
     position: relative;
     color:rgb(26, 57, 142);
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5em;
     font-family: 'SpoqaHanSansRegular';
     padding-left: 20px;
-    display: block;
+    display: flex;
     width: 100%;
 }
 
-nav ul li a:hover{
+nav ul li:hover{
     color: white;
     background-color: rgb(26, 57, 142);
 }
@@ -180,8 +177,17 @@ nav ul ul li{
     border-bottom: none;
 }
 
-nav ul ul li a{
-    font-size: 1.5rem;
+nav ul ul li h2{
+    font-size: 1.5em;
+}
+
+.index {
+    width: 100px;
+    font-size: 1.5em;
+}
+
+.date {
+    
 }
 
 .popup{
@@ -274,47 +280,47 @@ nav ul ul li a{
   }
 
 /* 마우스오버 */
-#hover001 a:hover {
+#hover001 h2:hover {
     font-size:0;
     }
 
-#hover001 a:hover:before {
+#hover001 h2:hover:before {
     content: '이름모를 흔적과의 첫 만남';
     font-size: 1.6rem;
 }
 
-#hover002 a:hover {
+#hover002 h2:hover {
     font-size:0;
     }
 
-#hover002 a:hover:before {
+#hover002 h2:hover:before {
     content: '낯선 모습으로 돌아온 신체의 잔여물';
     font-size: 1.6rem;
 }
 
-#hover003 a:hover {
+#hover003 h2:hover {
     font-size:0;
     }
 
-#hover003 a:hover:before {
+#hover003 h2:hover:before {
     content: '사라진 콰지';
     font-size: 1.6rem;
 }
 
-#hover004 a:hover {
+#hover004 h2:hover {
     font-size:0;
     }
 
-#hover004 a:hover:before {
+#hover004 h2:hover:before {
     content: '디지털 여행자를 위한 안내서';
     font-size: 1.6rem;
 }
 
-#hover005 a:hover {
+#hover005 h2:hover {
     font-size:0;
     }
 
-#hover005 a:hover:before {
+#hover005 h2:hover:before {
     content: '최신기사';
     font-size: 1.6rem;
 }
