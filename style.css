@@ -158,7 +158,7 @@ nav ul li:hover{
 }
 
 nav ul ul{
-    position: static;
+    position: relative;
     display: none;
 }
 
