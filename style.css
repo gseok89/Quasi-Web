@@ -217,6 +217,7 @@ nav ul ul li{
     color: #fff;
     font-size: 18px;
     text-align: center;
+    background-color: white;
 }
 
 .popup-info .popup-name,
@@ -232,13 +233,21 @@ nav ul ul li{
     display: block;
     position: absolute;
     z-index: 20;
-    top: 18px;
-    right: 19px;
-    width: 15px;
-    height: 15px;
-    background: #FF4848;
-    border-radius: 50%;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 24px;
     cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.popup-close-btn:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .popup-video-wrap video {
@@ -250,7 +259,7 @@ nav ul ul li{
     top: 30%;
     left: 2%;
     width: 280px;
-    height: 300px;
+    height: 350px;
     background: rgb(219, 219, 219);
     border: 0;
     color: black;
@@ -263,7 +272,7 @@ nav ul ul li{
 }
 
 .popup--1 .popup-inner {
-    padding: 80px 45px 0;
+    padding: 80px 25px 0;
     font-family: 'SpoqaHanSansRegular';
 }
 
@@ -289,7 +298,7 @@ nav ul ul li{
 }
 
 .popup--2 .popup-inner {
-    padding: 80px 45px 0;
+    padding: 80px 25px 0;
     font-family: 'SpoqaHanSansRegular';
 }
 
