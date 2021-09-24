@@ -20,6 +20,15 @@ body{
 	margin:auto;
 } 
 
+.sideheader {
+    width: 50%;
+    height: 70px;
+    text-align: center;
+    color:white;
+    font-size: 2.7rem;
+    border-bottom: 2px white;
+}
+
 .grid {
 	background-color:grey;
 	width:10px;
@@ -127,6 +136,7 @@ body{
 .sidebar{
     background-color:rgba(211, 211, 211, 1);
     position: fixed;
+    top: 0;
     width: 50%;
     height: 100%;
     right:-50%;
@@ -158,6 +168,13 @@ nav ul li{
     width: 100%;
 }
 
+nav ul li h2{
+    font-size: 1.5em;
+    font-weight: inherit;
+    width: calc(100% - 17rem);
+    line-height: 60px;
+}
+
 nav ul li:hover{
     color: white;
     background-color: rgb(26, 57, 142);
@@ -177,17 +194,14 @@ nav ul ul li{
     border-bottom: none;
 }
 
-nav ul ul li h2{
-    font-size: 1.5em;
-}
-
 .index {
-    width: 100px;
+    width: 180px;
     font-size: 1.5em;
+    line-height: 60px;
 }
 
 .date {
-    
+    line-height: 60px;
 }
 
 .popup{
