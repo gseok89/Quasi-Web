@@ -97,7 +97,7 @@ body{
     font-family: 'SpoqaHanSansLight';
     border-bottom: solid 1px white;
     padding-bottom: 0.4em;
-    line-height: 1.4em;
+    line-height: 1.65em;
 }
 
 
@@ -145,26 +145,78 @@ body{
 /*신규메뉴수정*/
 #nav-v1{
     width:100%;
-    text-align:center;
+    text-align:left;
     color: rgb(26, 57, 142);
 }
+
 .menu-v1{ 
     line-height:2; 
-    border-bottom:2px solid rgb(26, 57, 142); 
-} 
+    border-bottom:2px solid rgb(26, 57, 142);
+}
+
+.menu-v1 a{ 
+    display: inline-block;
+    width: 100%;
+}
+
+.m_title{
+    width: calc(100% - 12rem);
+    font-size: 2.4rem;
+    display: inline-block;
+}
+
+.m_title #eng{
+    display: inline;
+}
+.m_title:hover #eng{
+    display: none;
+}
+.m_title #kor{
+    display: none;
+}
+.m_title:hover #kor{
+    display: inline;
+}
+
 .menu-v1:hover{
     background-color:rgb(26, 57, 142);
-} 
+}
+
+.menu-v1:hover .m_title{
+
+}
+
 .menu-v1:hover>a{
     color:white;
 } 
+
 .menu-v1 .submenu{
     margin-top:7px;
-    display:none; 
+    display:none;
+    background-color:rgba(211, 211, 211, 1);
 } 
+
+.menu-v1 .submenu li{
+    border-top:2px solid rgb(26, 57, 142);
+    padding-left: 20px;
+}
+
 .menu-v1 .submenu li:hover{ 
     background-color:rgb(26, 57, 142);
     color:white;
+}
+
+.index {
+    width: 6.4rem;
+    font-size: 2.4rem;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.date{
+    width: 4rem;
+    display: inline-block;
+    font-size: 1.4rem;
 }
 
 
