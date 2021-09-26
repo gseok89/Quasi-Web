@@ -11,6 +11,10 @@ $('.sub-btn').click(function(){
     $('nav ul .sub-show').toggleClass("show");
 });
 
+$(".menu-v1").click(function(){
+  $(this).children(".submenu").stop().slideDown(); 
+}); 
+
 var isOpen = false;
 
 function TitleFade(){
