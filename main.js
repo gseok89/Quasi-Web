@@ -4,6 +4,8 @@ $('.overlay').click(function(){
     $(this).toggleClass("click");
     $('.sidebar').toggleClass("show");
     // randPos();
+    $('.overlay-left').toggleClass("show");
+    $('.sidebar-title-text').fadeToggle();
 });
 
 // $('.sub-btn').click(function(){
@@ -32,6 +34,7 @@ function randPos(){
 
 $(document).ready(function() {
 
+  $('.sidebar-title-text').fadeOut();
   //마우스 픽셀 흔적
   var $grid = $('.grid-1')
   var $gridItem = $('.grid-1-item')

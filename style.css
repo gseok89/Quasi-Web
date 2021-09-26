@@ -73,7 +73,7 @@ body{
 .overlay-left{
     position: fixed;
     width: 50%;
-    height: 90%;
+    height: 100%;
     z-index: 9;
 }
 
@@ -89,6 +89,17 @@ body{
     height: 100vh;
     vertical-align: middle;
 }
+
+.sidebar-title-text{
+    font-size: 2.4rem;
+    color : white;
+    text-align: center;
+    font-family: 'SpoqaHanSansLight';
+    border-bottom: solid 1px white;
+    padding-bottom: 0.4em;
+    line-height: 1.4em;
+}
+
 
 .sidebar-btn{
     position: absolute;
