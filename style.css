@@ -1,7 +1,8 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0; padding:0; list-style:none; font-family:"malgun gothic"; box-sizing:border-box;
+} 
+a{
+    text-decoration:none;color:inherit;
 }
 
 *:after, *:before {
@@ -126,6 +127,40 @@ body{
     right:0%;
 }
 
+
+
+
+
+/*신규메뉴수정*/
+#nav-v1{
+    width:100%;
+    text-align:center;
+    color: rgb(26, 57, 142);
+}
+.menu-v1{ 
+    line-height:2; 
+    border-bottom:2px solid rgb(26, 57, 142); 
+} 
+.menu-v1:hover{
+    background-color:rgb(26, 57, 142);
+} 
+.menu-v1:hover>a{
+    color:white;
+} 
+.menu-v1 .submenu{
+    margin-top:7px;
+    display:none; 
+} 
+.menu-v1 .submenu li:hover{ 
+    background-color:rgb(26, 57, 142);
+    color:white;
+}
+
+
+
+
+
+/*
 nav ul{
     height: 100%;
     width: 100%;
@@ -145,14 +180,19 @@ nav ul li{
     width: 100%;
 }
 
-nav ul li h2{
+nav ul li a {
+    width: 100%;
+}
+
+nav ul li a h2{
     font-size: 1.5em;
     font-weight: inherit;
     width: calc(100% - 17rem);
     line-height: 60px;
+    text-decoration: none;
 }
 
-nav ul li:hover{
+nav ul li a:hover{
     color: white;
     background-color: rgb(26, 57, 142);
 }
@@ -180,6 +220,52 @@ nav ul ul li{
 .date {
     line-height: 60px;
 }
+
+#hover001 a h2:hover {
+    font-size:0;
+    }
+
+#hover001 a h2:hover:before {
+    content: '이름모를 흔적과의 첫 만남';
+    font-size: 1.6rem;
+}
+
+#hover002 a h2:hover {
+    font-size:0;
+    }
+
+#hover002 a h2:hover:before {
+    content: '낯선 모습으로 돌아온 신체의 잔여물';
+    font-size: 1.6rem;
+}
+
+#hover003 a h2:hover {
+    font-size:0;
+    }
+
+#hover003 a h2:hover:before {
+    content: '사라진 콰지';
+    font-size: 1.6rem;
+}
+
+#hover004 a h2:hover {
+    font-size:0;
+    }
+
+#hover004 a h2:hover:before {
+    content: '디지털 여행자를 위한 안내서';
+    font-size: 1.6rem;
+}
+
+#hover005 a h2:hover {
+    font-size:0;
+    }
+
+#hover005 a h2:hover:before {
+    content: '최신기사';
+    font-size: 1.6rem;
+}
+*/
 
 .popup {
     position: fixed;
@@ -435,47 +521,3 @@ nav ul ul li{
     }
 }
 
-#hover001 h2:hover {
-    font-size:0;
-    }
-
-#hover001 h2:hover:before {
-    content: '이름모를 흔적과의 첫 만남';
-    font-size: 1.6rem;
-}
-
-#hover002 h2:hover {
-    font-size:0;
-    }
-
-#hover002 h2:hover:before {
-    content: '낯선 모습으로 돌아온 신체의 잔여물';
-    font-size: 1.6rem;
-}
-
-#hover003 h2:hover {
-    font-size:0;
-    }
-
-#hover003 h2:hover:before {
-    content: '사라진 콰지';
-    font-size: 1.6rem;
-}
-
-#hover004 h2:hover {
-    font-size:0;
-    }
-
-#hover004 h2:hover:before {
-    content: '디지털 여행자를 위한 안내서';
-    font-size: 1.6rem;
-}
-
-#hover005 h2:hover {
-    font-size:0;
-    }
-
-#hover005 h2:hover:before {
-    content: '최신기사';
-    font-size: 1.6rem;
-}
