@@ -3,22 +3,30 @@
 $('.overlay').click(function(){
     $(this).toggleClass("click");
     $('.sidebar').toggleClass("show");
+    TitleFade();
     // randPos();
-    $('.overlay-left').toggleClass("show");
-    $('.sidebar-title-text').fadeToggle();
 });
 
-// $('.sub-btn').click(function(){
-//    $('nav ul .sub-show').toggleClass("show");
-//});
+$('.sub-btn').click(function(){
+    $('nav ul .sub-show').toggleClass("show");
+});
 
+var isOpen = false;
 
-$(".menu-v1").click(function(){
-  $(this).children(".submenu").stop().slideDown(); 
-}); 
+function TitleFade(){
 
+  if(isOpen)
+  {
+    $('.sidebar-title-text').fadeOut();
+    isOpen = false;
+  }
+  else
+  {
+    $('.sidebar-title-text').delay(400).fadeIn();
 
-
+    isOpen = true;
+  }
+}
 
 //랜덤 팜업 함수
 function randPos(){
