@@ -64,12 +64,11 @@ $(document).ready(function() {
 
   var high= function(){
   $('.grid-1-item').hover(function() {
-
+    console.log('추가?');
     $(this).addClass('grid-1-item-highlight');
   });
   }
   high();
-
 
     $('.popup-close-btn').click(function () {
       $(this).parents('.popup').hide()
