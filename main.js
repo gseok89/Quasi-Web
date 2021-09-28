@@ -5,7 +5,15 @@ $('.overlay').click(function(){
     $('.sidebar').toggleClass("show");
     TitleFade();
     // randPos();
+    removeElementsByClass("dot");
 });
+
+function removeElementsByClass(className){
+  var elements = document.getElementsByClassName(className);
+  while(elements.length > 0){
+      elements[0].parentNode.removeChild(elements[0]);
+  }
+}
 
 $('.sub-btn').click(function(){
     $('nav ul .sub-show').toggleClass("show");
@@ -47,36 +55,68 @@ function randPos(){
   $('.popup').css('top', randPosY);
 }
 
-
 $(document).ready(function() {
 
   $('.sidebar-title-text').fadeOut();
-  //마우스 픽셀 흔적
-  var $grid = $('.grid-1')
-  var $gridItem = $('.grid-1-item')
-  var gridItemHeight = $gridItem.height()
-  var gridItemWidth = $gridItem.width()
-  
-  var horzCount = Math.floor($grid.width() / gridItemWidth)
-  var vertCount = Math.floor($grid.height() / gridItemHeight)
-  
-  var totalGridItems = horzCount * vertCount
-  for (var i = 0; i < totalGridItems; i++) {
-    var $gridItemClone = $gridItem.clone();
-    $grid.append($gridItemClone);
-  }
 
-  var high= function(){
-  $('.grid-1-item').hover(function() {
-    console.log('추가?');
-    $(this).addClass('grid-1-item-highlight');
-  });
-  }
-  high();
+  //마우스 픽셀 흔적
+  // var $grid = $('.grid-1')
+  // var $gridItem = $('.grid-1-item')
+  // var gridItemHeight = $gridItem.height()
+  // var gridItemWidth = $gridItem.width()
+  
+  // var horzCount = Math.floor($grid.width() / gridItemWidth)
+  // var vertCount = Math.floor($grid.height() / gridItemHeight)
+  
+  // var totalGridItems = horzCount * vertCount
+  // for (var i = 0; i < totalGridItems; i++) {
+  //   var $gridItemClone = $gridItem.clone();
+  //   $grid.append($gridItemClone);
+  // }
+
+  // var high= function(){
+  // $('.grid-1-item').hover(function() {
+  //   console.log('추가?');
+  //   $(this).addClass('grid-1-item-highlight');
+  // });
+  // }
+  // high();
+
+//   $('*').not('.popup').not('.sidebar').each(function() {
+//     $(this).mousemove(function(e) {
+
+//         // we need to hide the #glass prior to setting the currentNode, otherwise the currentNode will be the #glass itself            
+//         $('.popup').hide();
+//         $('.sidebar').hide();
+//         currentNode = document.elementFromPoint(e.clientX, e.clientY);
+//         $('.popup').show();
+//         $('.sidebar').show();
+
+//         // write currentNode id to show its working
+//         // $('span b').html(currentNode);
+//         // console.log(currentNode);
+
+//         // currentNode.classList.add('grid-1-item-highlight');
+//     });
+// });
+
+  // $(document).click(function(e){
+  //   console.log("옵니까?" + event.);
+  //   document.getElementsByClassName("grid-1-item")
+  //   $('.grid-1-item').addClass('grid-1-item-highlight');
+  //   document.querySelectorAll()
+  //   var x = e.clientX, y = e.clientY,
+  //       elementMouseIsOver = document.elementsFromPoint(x, y);
+
+  //       console.log(elementMouseIsOver);
+
+  // });
 
     $('.popup-close-btn').click(function () {
       $(this).parents('.popup').hide()
   });
+
+  //마우스 움직이면서 포지션 좌표에 타겟 중에 grid-1-item에 하이라이트 클래스 추가하기
 
   // $('.popup-content').mouseenter(function () {
   //     $('.arrow2').css({
@@ -136,3 +176,13 @@ var popupCount = 20;
                 });
             });
 
+  onmousemove = function(e){
+
+    var pos = e;
+    var dot;
+    dot = document.createElement('div');
+    dot.className = "dot";
+    dot.style.left = pos.x + "px";
+    dot.style.top = pos.y + "px";
+    document.body.appendChild(dot);
+}      

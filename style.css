@@ -69,6 +69,13 @@ body{
     background-color: white;
 }
 
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+  }
+
 .overlay{
     position: fixed;
     width: 100%;
@@ -130,7 +137,7 @@ body{
 }
 
 .sidebar{
-    background-color:rgba(211, 211, 211, 1);
+    background-color:rgba(211, 211, 211, 0.95);
     position: fixed;
     top: 0;
     width: 50%;
@@ -188,10 +195,6 @@ body{
 
 .menu-v1:hover{
     background-color:rgb(26, 57, 142);
-}
-
-.menu-v1:hover .m_title{
-
 }
 
 .menu-v1:hover>a{
