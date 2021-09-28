@@ -13,7 +13,11 @@ $('.sub-btn').click(function(){
 
 $(".menu-v1").click(function(){
   $(this).children(".submenu").stop().slideDown(); 
-}); 
+});
+
+$(".contents").click(function(){
+  $(this).children(".text").stop().slideDown(); 
+});
 
 var isOpen = false;
 
