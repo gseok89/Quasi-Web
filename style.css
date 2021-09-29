@@ -244,117 +244,6 @@ body{
     background-color:rgba(211, 211, 211, 1);
 }
 
-
-
-
-
-/*
-nav ul{
-    height: 100%;
-    width: 100%;
-    list-style: none;
-}
-
-nav ul li{
-    height: 70px;
-    border-bottom: 2px solid rgb(26, 57, 142);
-    position: relative;
-    color:rgb(26, 57, 142);
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'SpoqaHanSansRegular';
-    padding-left: 20px;
-    display: flex;
-    width: 100%;
-}
-
-nav ul li a {
-    width: 100%;
-}
-
-nav ul li a h2{
-    font-size: 1.5em;
-    font-weight: inherit;
-    width: calc(100% - 17rem);
-    line-height: 60px;
-    text-decoration: none;
-}
-
-nav ul li a:hover{
-    color: white;
-    background-color: rgb(26, 57, 142);
-}
-
-nav ul ul{
-    position: relative;
-    display: none;
-}
-
-nav ul .sub-show.show{
-    display: block;
-}
-
-nav ul ul li{
-    line-height: 42px;
-    border-bottom: none;
-}
-
-.index {
-    width: 180px;
-    font-size: 1.5em;
-    line-height: 60px;
-}
-
-.date {
-    line-height: 60px;
-}
-
-#hover001 a h2:hover {
-    font-size:0;
-    }
-
-#hover001 a h2:hover:before {
-    content: '이름모를 흔적과의 첫 만남';
-    font-size: 1.6rem;
-}
-
-#hover002 a h2:hover {
-    font-size:0;
-    }
-
-#hover002 a h2:hover:before {
-    content: '낯선 모습으로 돌아온 신체의 잔여물';
-    font-size: 1.6rem;
-}
-
-#hover003 a h2:hover {
-    font-size:0;
-    }
-
-#hover003 a h2:hover:before {
-    content: '사라진 콰지';
-    font-size: 1.6rem;
-}
-
-#hover004 a h2:hover {
-    font-size:0;
-    }
-
-#hover004 a h2:hover:before {
-    content: '디지털 여행자를 위한 안내서';
-    font-size: 1.6rem;
-}
-
-#hover005 a h2:hover {
-    font-size:0;
-    }
-
-#hover005 a h2:hover:before {
-    content: '최신기사';
-    font-size: 1.6rem;
-}
-*/
-
 .popup {
     position: fixed;
     z-index: 20;
@@ -609,3 +498,212 @@ nav ul ul li{
     }
 }
 
+.animate-menu-push {
+    left: 0;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .animate-menu-push.animate-menu-push-right {
+    left: 200px;
+  }
+  .animate-menu-push.animate-menu-push-left {
+    left: -200px;
+  }
+  
+  .animate-menu {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .animate-menu-left {
+    left: -200px;
+  }
+  .animate-menu-left.animate-menu-open {
+    left: 0;
+  }
+  
+  .animate-menu-right {
+    right: -200px;
+  }
+  .animate-menu-right.animate-menu-open {
+    right: 0;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* background-color: #222d32; */
+  }
+  .sidebar-menu > li {
+    /* position: relative;
+    margin: 0;
+    padding: 0; */
+    line-height: 2.8em; 
+    border-bottom:2px solid rgb(26, 57, 142);
+  }
+  .sidebar-menu > li > a {
+    padding: 12px 5px 12px 15px;
+    display: block;
+    border-left: 3px solid transparent;
+    color: blue;
+  }
+  .sidebar-menu > li > a > .fa {
+    width: 6.4rem;
+    font-size: 2.4rem;
+    display: inline-block;
+    font-family: 'SpoqaHanSansLight';
+  }
+
+  .sidebar-menu > li > a > span {
+    font-size: 2.4rem;
+    padding-left: 3rem;
+    display: inline-block;
+  }
+
+  .sidebar-menu > li:hover > a, .sidebar-menu > li.active > a {
+    color: #fff;
+    background: #1e282c;
+    border-left-color: #3c8dbc;
+  }
+  .sidebar-menu > li .label,
+  .sidebar-menu > li .badge {
+    margin-top: 3px;
+    margin-right: 5px;
+  }
+  .sidebar-menu li.sidebar-header {
+    padding: 10px 25px 10px 15px;
+    font-size: 12px;
+    color: #4b646f;
+    background: #1a2226;
+  }
+  .sidebar-menu li > a > .fa-date {
+    /* width: auto;
+    height: auto; */
+    font-size: 1.2rem;
+    padding-left: 1px;
+    margin-right: 10px;
+    margin-top: 3px;
+    /* display: inline-block; */
+  }
+  .sidebar-menu li.active > a > .fa-angle-left {
+    transform: rotate(-90deg);
+  }
+  .sidebar-menu li.active > .sidebar-submenu {
+    display: block;
+  }
+  .sidebar-menu a {
+    color: #b8c7ce;
+    text-decoration: none;
+  }
+  .sidebar-menu .sidebar-submenu {
+    display: none;
+    list-style: none;
+    padding-left: 5px;
+    margin: 0 1px;
+    background: #2c3b41;
+  }
+  .sidebar-menu .sidebar-submenu .sidebar-submenu {
+    padding-left: 20px;
+  }
+  .sidebar-menu .sidebar-submenu > li > a {
+    padding: 5px 5px 5px 15px;
+    display: block;
+    font-size: 14px;
+    color: #8aa4af;
+  }
+  .sidebar-menu .sidebar-submenu > li > a > .fa {
+    width: 20px;
+  }
+  .sidebar-menu .sidebar-submenu > li > a > .fa-angle-left,
+  .sidebar-menu .sidebar-submenu > li > a > .fa-angle-down {
+    width: auto;
+  }
+  .sidebar-menu .sidebar-submenu > li.active > a,
+  .sidebar-menu .sidebar-submenu > li > a:hover {
+    color: #fff;
+  }
+  
+  .sidebar-menu-rtl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #222d32;
+  }
+  .sidebar-menu-rtl > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar-menu-rtl > li > a {
+    padding: 12px 15px 12px 5px;
+    display: block;
+    border-left: 3px solid transparent;
+    color: #b8c7ce;
+  }
+  .sidebar-menu-rtl > li > a > .fa {
+    width: 20px;
+  }
+  .sidebar-menu-rtl > li:hover > a, .sidebar-menu-rtl > li.active > a {
+    color: #fff;
+    background: #1e282c;
+    border-left-color: #3c8dbc;
+  }
+  .sidebar-menu-rtl > li .label,
+  .sidebar-menu-rtl > li .badge {
+    margin-top: 3px;
+    margin-right: 5px;
+  }
+  .sidebar-menu-rtl li.sidebar-header {
+    padding: 10px 15px 10px 25px;
+    font-size: 12px;
+    color: #4b646f;
+    background: #1a2226;
+  }
+  .sidebar-menu-rtl li > a > .fa-angle-left {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+  .sidebar-menu-rtl li.active > a > .fa-angle-left {
+    transform: rotate(-90deg);
+  }
+  .sidebar-menu-rtl li.active > .sidebar-submenu {
+    display: block;
+  }
+  .sidebar-menu-rtl a {
+    color: #b8c7ce;
+    text-decoration: none;
+  }
+  .sidebar-menu-rtl .sidebar-submenu {
+    display: none;
+    list-style: none;
+    padding-right: 5px;
+    margin: 0 1px;
+    background: #2c3b41;
+  }
+  .sidebar-menu-rtl .sidebar-submenu .sidebar-submenu {
+    padding-right: 20px;
+  }
+  .sidebar-menu-rtl .sidebar-submenu > li > a {
+    padding: 5px 15px 5px 5px;
+    display: block;
+    font-size: 14px;
+    color: #8aa4af;
+  }
+  .sidebar-menu-rtl .sidebar-submenu > li > a > .fa {
+    width: 20px;
+  }
+  .sidebar-menu-rtl .sidebar-submenu > li > a > .fa-angle-left,
+  .sidebar-menu-rtl .sidebar-submenu > li > a > .fa-angle-down {
+    width: auto;
+  }
+  .sidebar-menu-rtl .sidebar-submenu > li.active > a,
+  .sidebar-menu-rtl .sidebar-submenu > li > a:hover {
+    color: #fff;
+  }
