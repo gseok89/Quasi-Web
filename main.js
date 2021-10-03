@@ -4,6 +4,7 @@ $('.overlay').click(function(){
     $(this).toggleClass("click");
     $('.sidebar').toggleClass("show");
     TitleFade();
+
     // randPos();
     removeElementsByClass("dot");
 });
@@ -34,12 +35,13 @@ function TitleFade(){
   if(isOpen)
   {
     $('.sidebar-title-text').fadeOut();
+    InitSidebar();
+
     isOpen = false;
   }
   else
   {
     $('.sidebar-title-text').delay(400).fadeIn();
-
     isOpen = true;
   }
 }
@@ -191,6 +193,7 @@ var popupCount = 20;
 $.sidebarMenu = function(menu) {
   var animationSpeed = 300,
     subMenuSelector = '.sidebar-submenu';
+    contentMenuSelector = '.sidebar-content';
 
   $(menu).on('click', 'li a', function(e) {
     var $this = $(this);
@@ -204,7 +207,7 @@ $.sidebarMenu = function(menu) {
     }
 
     //If the menu is not visible
-    else if ((checkElement.is(subMenuSelector)) && (!checkElement.is(':visible'))) {
+    else if (checkElement.is(subMenuSelector) && !checkElement.is(':visible')) {
       //Get the parent menu
       var parent = $this.parents('ul').first();
       //Close all open menus within the parent
@@ -226,7 +229,63 @@ $.sidebarMenu = function(menu) {
     if (checkElement.is(subMenuSelector)) {
       e.preventDefault();
     }
+
+
+
+    //임시 2
+    if (checkElement.is(contentMenuSelector) && checkElement.is(':visible')) {
+      checkElement.slideUp(animationSpeed, function() {
+        checkElement.removeClass('menu-open');
+      });
+      checkElement.parent("li").removeClass("active");
+    }
+
+    //If the menu is not visible
+    else if ((checkElement.is(contentMenuSelector)) && (!checkElement.is(':visible'))) {
+      //Get the parent menu
+      var parent = $this.parents('ul').first();
+      //Close all open menus within the parent
+      var ul = parent.find('ul:visible').slideUp(animationSpeed);
+      //Remove the menu-open class from the parent
+      ul.removeClass('menu-open');
+      //Get the parent li
+      var parent_li = $this.parent("li");
+
+      //Open the target menu and add the menu-open class
+      checkElement.slideDown(animationSpeed, function() {
+        //Add the class active to the parent li
+        checkElement.addClass('menu-open');
+        parent.find('li.active').removeClass('active');
+        parent_li.addClass('active');
+      });
+    }
+    //if this isn't a link, prevent the page from being redirected
+    if (checkElement.is(contentMenuSelector)) {
+      e.preventDefault();
+    }
   });
 }
 
 $.sidebarMenu($('.sidebar-menu'))
+
+function InitSidebar()
+{
+  var animationSpeed = 300;
+
+  var initSubMenu = $('.sidebar-submenu');
+  var initContentMenu = $('.sidebar-content');
+
+  if (initSubMenu.is(':visible')) {
+    initSubMenu.slideUp(animationSpeed, function() {
+      initSubMenu.removeClass('menu-open');
+    });
+    initSubMenu.parent("li").removeClass("active");
+  }
+  //임시 2
+  if (initContentMenu.is(':visible')) {
+    initContentMenu.slideUp(animationSpeed, function() {
+      initContentMenu.removeClass('menu-open');
+    });
+    initContentMenu.parent("li").removeClass("active");
+  }
+}
