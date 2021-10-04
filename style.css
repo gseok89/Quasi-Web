@@ -102,6 +102,7 @@ body{
     margin-right: 50px;
     height: 100vh;
     vertical-align: middle;
+    overflow:hidden;
 }
 
 .sidebar-title-text{
@@ -150,6 +151,7 @@ body{
 
 .sidebar.show{
     right:0%;
+    overflow: overlay;
 }
 
 
