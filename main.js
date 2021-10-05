@@ -6,7 +6,7 @@ $('.overlay').click(function(){
     TitleFade();
 
     // randPos();
-    removeElementsByClass("dot");
+   // removeElementsByClass("dot");
 });
 
 function removeElementsByClass(className){
@@ -313,7 +313,7 @@ function OpenPopup(targetDate)
 {
     switch(targetDate)
     {
-      case "20260408":
+      case "20260411":
         if(!$('.popup--3').is(':visible'))
         {
           $('.popup--3').show();
