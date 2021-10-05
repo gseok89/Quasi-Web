@@ -113,6 +113,7 @@ body{
     border-bottom: solid 1px white;
     padding-bottom: 0.4em;
     line-height: 1.65em;
+    display: none;
 }
 
 
@@ -246,6 +247,7 @@ body{
     background-color:rgba(211, 211, 211, 1);
 }
 
+/* 팝업 시작 */
 .popup {
     position: fixed;
     z-index: 20;
@@ -370,6 +372,33 @@ body{
 .popup--2 .popup-name {
     color: black;
     font-family: 'SpoqaHanSansBold';
+}
+
+.popup--3 {
+  top: 20%;
+  left: 30%;
+  width: 250px;
+  height: 250px;
+  background: rgb(219, 219, 219);
+  border: 0;
+  color: black;
+  display: none;
+}
+
+.popup--3.ui-state-hover {
+  background: rgb(219, 219, 219);
+  border: 0;
+  color: black;
+}
+
+.popup--3 .popup-inner {
+  padding: 80px 25px 0;
+  font-family: 'SpoqaHanSansRegular';
+}
+
+.popup--3 .popup-name {
+  color: black;
+  font-family: 'SpoqaHanSansBold';
 }
 
 .popup.show{

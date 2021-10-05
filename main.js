@@ -35,6 +35,7 @@ function TitleFade(){
   if(isOpen)
   {
     $('.sidebar-title-text').fadeOut();
+    $('.title-text').fadeIn();
     InitSidebar();
 
     isOpen = false;
@@ -42,6 +43,7 @@ function TitleFade(){
   else
   {
     $('.sidebar-title-text').delay(400).fadeIn();
+    $('.title-text').fadeOut();
     isOpen = true;
   }
 }
@@ -162,6 +164,13 @@ var popupCount = 20;
               }
           });
 
+            $("#draggable3").draggable({
+              start: function () {
+                  popupCount++;
+                  updateCounterStatus($('.popup--3'), popupCount);
+              }
+          });
+
             function updateCounterStatus($event_counter, new_count) {
                 if (!$event_counter.hasClass("ui-state-hover")) {
                     $event_counter.addClass("ui-state-hover")
@@ -204,6 +213,9 @@ $.sidebarMenu = function(menu) {
         checkElement.removeClass('menu-open');
       });
       checkElement.parent("li").removeClass("active");
+
+      ClosePopup();
+
     }
 
     //If the menu is not visible
@@ -224,6 +236,8 @@ $.sidebarMenu = function(menu) {
         parent.find('li.active').removeClass('active');
         parent_li.addClass('active');
       });
+
+      ClosePopup();
     }
     //if this isn't a link, prevent the page from being redirected
     if (checkElement.is(subMenuSelector)) {
@@ -238,6 +252,8 @@ $.sidebarMenu = function(menu) {
         checkElement.removeClass('menu-open');
       });
       checkElement.parent("li").removeClass("active");
+
+      
     }
 
     //If the menu is not visible
@@ -258,6 +274,9 @@ $.sidebarMenu = function(menu) {
         parent.find('li.active').removeClass('active');
         parent_li.addClass('active');
       });
+
+      //사이드바 서브 메뉴 (일기)의 종류 및 아이디 체크하여 팝업 호출하기
+      OpenPopup($this.text());
     }
     //if this isn't a link, prevent the page from being redirected
     if (checkElement.is(contentMenuSelector)) {
@@ -288,4 +307,22 @@ function InitSidebar()
     });
     initContentMenu.parent("li").removeClass("active");
   }
+}
+
+function OpenPopup(targetDate)
+{
+    switch(targetDate)
+    {
+      case "20260408":
+        if(!$('.popup--3').is(':visible'))
+        {
+          $('.popup--3').show();
+        }
+        break;
+    }
+}
+
+function ClosePopup()
+{
+  $('.popup-submenu').hide();
 }
