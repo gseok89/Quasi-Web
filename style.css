@@ -16,6 +16,10 @@ a{
     box-sizing: border-box;
   }
 
+img{
+  display: block;
+}
+
 body{
     background-color: rgb(26, 57, 142);
 }
