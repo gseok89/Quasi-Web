@@ -258,14 +258,14 @@ body{
     border-radius: 25px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
     border: 0;
     color: #000;
 }
 
 .popup.ui-state-hover,
 .img-popup.ui-state-hover {
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
     border: 0;
     color: #000;
 }
@@ -335,6 +335,7 @@ body{
     background: rgb(219, 219, 219);
     border: 0;
     color: black;
+    z-index: 15;
 }
 
 .popup--1.ui-state-hover {
@@ -354,13 +355,14 @@ body{
 }
 
 .popup--2 {
-    top: 60%;
+    top: 55%;
     left: 20%;
     width: 350px;
     height: 250px;
     background: rgb(219, 219, 219);
     border: 0;
     color: black;
+    z-index: 17;
 }
 
 .popup--2.ui-state-hover {
@@ -380,8 +382,8 @@ body{
 }
 
 .popup--3 {
-  top: 20%;
-  left: 22%;
+  top: 85%;
+  left: 3%;
   /* width: 380px;
   height: 400px; */
   background: rgb(219, 219, 219);
@@ -404,6 +406,215 @@ body{
 .popup--3 .popup-name {
   color: black;
   font-family: 'SpoqaHanSansBold';
+}
+
+.popup--4 {
+  top: 40%;
+  left: 35%;
+  /* width: 380px;
+  height: 400px; */
+  background: rgb(219, 219, 219);
+  border: 0;
+  color: black;
+  /* display: none; */
+  z-index: 16;
+}
+
+.popup--4.ui-state-hover {
+  background: rgb(219, 219, 219);
+  border: 0;
+  color: black;
+}
+
+.popup--4 .popup-inner {
+  /* padding: 80px 25px 0; */
+  font-family: 'SpoqaHanSansRegular';
+}
+
+.popup--4 .popup-name {
+  color: black;
+  font-family: 'SpoqaHanSansBold';
+}
+
+.popup--5 {
+  top: 10%;
+  left: 25%;
+  /* width: 380px;
+  height: 400px; */
+  background: rgb(219, 219, 219);
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 20;
+}
+
+.popup--5.ui-state-hover {
+  background: rgb(219, 219, 219);
+  border: 0;
+  color: black;
+}
+
+.popup--5 .popup-inner {
+  /* padding: 80px 25px 0; */
+  font-family: 'SpoqaHanSansRegular';
+}
+
+.popup--5 .popup-name {
+  color: black;
+  font-family: 'SpoqaHanSansBold';
+}
+
+.popup--6 {
+  top: 10%;
+  left: 5%;
+  /* width: 380px;
+  height: 400px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 21;
+}
+
+.popup--6.ui-state-hover {
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+}
+
+.popup--6 .popup-inner {
+  /* padding: 80px 25px 0; */
+  font-family: 'SpoqaHanSansRegular';
+}
+
+.popup--6 .popup-name {
+  color: black;
+  font-family: 'SpoqaHanSansBold';
+}
+
+.popup--7 {
+  top: 50%;
+  left: 10%;
+  /* width: 380px;
+  height: 400px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 22;
+}
+
+.popup--7.ui-state-hover {
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+}
+
+.popup--7 .popup-inner {
+  /* padding: 80px 25px 0; */
+  font-family: 'SpoqaHanSansRegular';
+}
+
+.popup--7 .popup-name {
+  color: black;
+  font-family: 'SpoqaHanSansBold';
+}
+
+.popup--8 {
+  top: 50%;
+  left: 5%;
+  /* width: 380px;
+  height: 400px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 23;
+}
+
+.popup--9 {
+  top: 55%;
+  left: 20%;
+  /* width: 380px;
+  height: 400px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 24;
+}
+
+.popup--10 {
+  top: 70%;
+  left: 20%;
+  /* width: 380px;
+  height: 400px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 25;
+}
+
+.popup--11 {
+  top: 65%;
+  left: 2%;
+  /* width: 380px;
+  height: 400px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 26;
+}
+
+.popup--12 {
+  top: 13%;
+  left: 2%;
+  /* width: 380px;
+  height: 400px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 27;
+}
+
+.popup--13 {
+  top: 45%;
+  left: 23%;
+  /* width: 380px;
+  height: 400px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 28;
+}
+
+/* 스크롤 팝업 */
+.popup--14 {
+  top: 5%;
+  left: 10%;
+  width: 600px;
+  height: 680px;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 29;
+}
+
+.popup--15 {
+  top: 60%;
+  left: 5%;
+  /* width: 600px;
+  height: 680px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 30;
 }
 
 .popup.show{

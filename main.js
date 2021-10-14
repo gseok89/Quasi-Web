@@ -171,6 +171,79 @@ var popupCount = 20;
               }
           });
 
+          $("#draggable4").draggable({
+            start: function () {
+                popupCount++;
+                updateCounterStatus($('.popup--4'), popupCount);
+            }
+        });
+        $("#draggable5").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--5'), popupCount);
+          }
+      });
+        $("#draggable6").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--6'), popupCount);
+          }
+      });
+        $("#draggable7").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--7'), popupCount);
+          }
+      });
+        $("#draggable8").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--8'), popupCount);
+          }
+      });
+        $("#draggable9").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--9'), popupCount);
+          }
+      });
+        $("#draggable10").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--10'), popupCount);
+          }
+      });
+        $("#draggable11").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--11'), popupCount);
+          }
+      });
+        $("#draggable12").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--12'), popupCount);
+          }
+      });
+        $("#draggable13").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--13'), popupCount);
+          }
+      });
+        $("#draggable14").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--14'), popupCount);
+          }
+      });
+        $("#draggable15").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--15'), popupCount);
+          }
+      });
+
             function updateCounterStatus($event_counter, new_count) {
                 if (!$event_counter.hasClass("ui-state-hover")) {
                     $event_counter.addClass("ui-state-hover")
@@ -313,12 +386,66 @@ function OpenPopup(targetDate)
 {
     switch(targetDate)
     {
-      case "20260411":
-        if(!$('.popup--3').is(':visible'))
+      case "SAT. 11 APR. 2026":
+        if(!$('.popup--5').is(':visible'))
         {
-          $('.popup--3').show();
+          $('.popup--5').show();
         }
         break;
+      case "SAT. 16 MAY. 2026":
+        if(!$('.popup--6').is(':visible'))
+        {
+          $('.popup--6').show();
+        }
+      break;
+      case "SUN. 17 MAY. 2026":
+        if(!$('.popup--7').is(':visible'))
+        {
+          $('.popup--7').show();
+        }
+      break;
+      case "SUN. 07 JUN. 2026":
+        if(!$('.popup--8').is(':visible'))
+        {
+          $('.popup--8').show();
+        }
+        if(!$('.popup--9').is(':visible'))
+        {
+          $('.popup--9').show();
+        }
+        if(!$('.popup--10').is(':visible'))
+        {
+          $('.popup--10').show();
+        }
+      break;
+      case "MON. 13 JLY. 2026":
+        if(!$('.popup--11').is(':visible'))
+        {
+          $('.popup--11').show();
+        }
+      break;
+      case "TUE. 14 JLY. 2026":
+        if(!$('.popup--12').is(':visible'))
+        {
+          $('.popup--12').show();
+        }
+        if(!$('.popup--13').is(':visible'))
+        {
+          $('.popup--13').show();
+        }
+      break;
+      case "THU. 29 OCT. 2026":
+        if(!$('.popup--14').is(':visible'))
+        {
+          $('.popup--14').show();
+        }
+      break;
+      case "FRI. 04 DEC. 2026":
+        if(!$('.popup--15').is(':visible'))
+        {
+          $('.popup--15').show();
+        }
+      break;
     }
 }
 
