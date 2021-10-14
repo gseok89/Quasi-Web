@@ -378,12 +378,12 @@ body{
 .popup--3 {
   top: 20%;
   left: 22%;
-  width: 380px;
-  height: 400px;
+  /* width: 380px;
+  height: 400px; */
   background: rgb(219, 219, 219);
   border: 0;
   color: black;
-  display: none;
+  /* display: none; */
 }
 
 .popup--3.ui-state-hover {
@@ -393,7 +393,7 @@ body{
 }
 
 .popup--3 .popup-inner {
-  padding: 80px 25px 0;
+  /* padding: 80px 25px 0; */
   font-family: 'SpoqaHanSansRegular';
 }
 
