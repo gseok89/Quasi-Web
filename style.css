@@ -522,7 +522,7 @@ body{
 }
 
 .popup--8 {
-  top: 50%;
+  top: 52%;
   left: 5%;
   /* width: 380px;
   height: 400px; */
@@ -534,8 +534,8 @@ body{
 }
 
 .popup--9 {
-  top: 55%;
-  left: 20%;
+  top: 53%;
+  left: 25%;
   /* width: 380px;
   height: 400px; */
   /* background: rgb(219, 219, 219); */
@@ -547,7 +547,7 @@ body{
 
 .popup--10 {
   top: 70%;
-  left: 20%;
+  left: 16%;
   /* width: 380px;
   height: 400px; */
   /* background: rgb(219, 219, 219); */
@@ -827,7 +827,7 @@ body{
 }
 
 .popup--33 {
-  top: 1%;
+  top: 6%;
   left: 33%;
   /* background: rgb(219, 219, 219); */
   border: 0;
@@ -878,7 +878,7 @@ body{
 
 .popup--38 {
   top: 60%;
-  left: 20%;
+  left: 16%;
   /* background: rgb(219, 219, 219); */
   border: 0;
   color: black;
