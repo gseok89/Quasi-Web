@@ -148,7 +148,7 @@ $(document).ready(function() {
   // });
 });
 
-var popupCount = 20;
+var popupCount = 40;
 
             $("#draggable1").draggable({
                 start: function () {
@@ -243,6 +243,156 @@ var popupCount = 20;
               updateCounterStatus($('.popup--15'), popupCount);
           }
       });
+        $("#draggable16").draggable({
+          start: function () {
+              popupCount++;
+              updateCounterStatus($('.popup--16'), popupCount);
+          }
+      });
+      $("#draggable17").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--17'), popupCount);
+        }
+    });
+      $("#draggable18").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--18'), popupCount);
+        }
+    });
+      $("#draggable19").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--19'), popupCount);
+        }
+    });
+      $("#draggable20").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--20'), popupCount);
+        }
+    });
+      $("#draggable21").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--21'), popupCount);
+        }
+    });
+      $("#draggable22").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--22'), popupCount);
+        }
+    });
+      $("#draggable23").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--23'), popupCount);
+        }
+    });
+      $("#draggable24").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--24'), popupCount);
+        }
+    });
+      $("#draggable25").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--25'), popupCount);
+        }
+    });
+      $("#draggable26").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--26'), popupCount);
+        }
+    });
+      $("#draggable27").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--27'), popupCount);
+        }
+    });
+      $("#draggable28").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--28'), popupCount);
+        }
+    });
+      $("#draggable29").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--29'), popupCount);
+        }
+    });
+      $("#draggable30").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--30'), popupCount);
+        }
+    });
+      $("#draggable31").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--31'), popupCount);
+        }
+    });
+      $("#draggable32").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--32'), popupCount);
+        }
+    });
+      $("#draggable33").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--33'), popupCount);
+        }
+    });
+      $("#draggable34").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--34'), popupCount);
+        }
+    });
+      $("#draggable35").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--35'), popupCount);
+        }
+    });
+      $("#draggable36").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--36'), popupCount);
+        }
+    });
+      $("#draggable37").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--37'), popupCount);
+        }
+    });
+      $("#draggable38").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--38'), popupCount);
+        }
+    });
+      $("#draggable39").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--39'), popupCount);
+        }
+    });
+      $("#draggable44").draggable({
+        start: function () {
+            popupCount++;
+            updateCounterStatus($('.popup--44'), popupCount);
+        }
+    });
 
             function updateCounterStatus($event_counter, new_count) {
                 if (!$event_counter.hasClass("ui-state-hover")) {
@@ -446,11 +596,138 @@ function OpenPopup(targetDate)
           $('.popup--15').show();
         }
       break;
+      case "THU. 18 FAB. 2027":
+        if(!$('.popup--16').is(':visible'))
+        {
+          $('.popup--16').show();
+        }
+        if(!$('.popup--17').is(':visible'))
+        {
+          $('.popup--17').show();
+        }
+        if(!$('.popup--18').is(':visible'))
+        {
+          $('.popup--18').show();
+        }
+        if(!$('.popup--19').is(':visible'))
+        {
+          $('.popup--19').show();
+        }
+      break;
+      case "FRI. 05 MAR. 2027":
+        if(!$('.popup--20').is(':visible'))
+        {
+          $('.popup--20').show();
+        }
+        if(!$('.popup--21').is(':visible'))
+        {
+          $('.popup--21').show();
+        }
+        if(!$('.popup--22').is(':visible'))
+        {
+          $('.popup--22').show();
+        }
+      break;
+      case "SAT. 10 JLY. 2027":
+        if(!$('.popup--23').is(':visible'))
+        {
+          $('.popup--23').show();
+        }
+      break;
+      case "FRI. 22 JLY. 2027":
+        if(!$('.popup--24').is(':visible'))
+        {
+          $('.popup--24').show();
+        }
+        if(!$('.popup--25').is(':visible'))
+        {
+          $('.popup--25').show();
+        }
+      break;
+      case "WED. 01 SEP. 2027":
+        if(!$('.popup--26').is(':visible'))
+        {
+          $('.popup--26').show();
+        }
+      break;
+      case "TUE. 21 DEC. 2027":
+        if(!$('.popup--27').is(':visible'))
+        {
+          $('.popup--27').show();
+        }
+      break;
+      case "FRI. 11 FAB. 2028":
+        if(!$('.popup--28').is(':visible'))
+        {
+          $('.popup--28').show();
+        }
+        if(!$('.popup--29').is(':visible'))
+        {
+          $('.popup--29').show();
+        }
+      break;
+      case "SUN. 25 JUN. 2028":
+        if(!$('.popup--30').is(':visible'))
+        {
+          $('.popup--30').show();
+        }
+        if(!$('.popup--31').is(':visible'))
+        {
+          $('.popup--31').show();
+        }
+        if(!$('.popup--32').is(':visible'))
+        {
+          $('.popup--32').show();
+        }
+      break;
+      case "WED 09 AUG. 2028":
+        if(!$('.popup--33').is(':visible'))
+        {
+          $('.popup--33').show();
+        }
+        if(!$('.popup--34').is(':visible'))
+        {
+          $('.popup--34').show();
+        }
+      break;
+      case "TUE. 01 OCT. 2028":
+        if(!$('.popup--35').is(':visible'))
+        {
+          $('.popup--35').show();
+        }
+        if(!$('.popup--36').is(':visible'))
+        {
+          $('.popup--36').show();
+        }
+      break;
+      case "MON. 02 JUN. 2036":
+        if(!$('.popup--37').is(':visible'))
+        {
+          $('.popup--37').show();
+        }
+        if(!$('.popup--38').is(':visible'))
+        {
+          $('.popup--38').show();
+        }
+      break;
+      case "WED. 25 JUN. 2036":
+        if(!$('.popup--39').is(':visible'))
+        {
+          $('.popup--39').show();
+        }
+      break;
+      case "SAT. 03 JAN. 2037":
+        if(!$('.popup--44').is(':visible'))
+        {
+          $('.popup--44').show();
+        }
+      break;
     }
 }
 
 function ClosePopup()
 {
   $('.popup-submenu').hide();
+  popupCount = 40;
 }
 

@@ -152,7 +152,7 @@ body{
     right:-50%;
     /* right:0%; */
     transition: right 0.5s ease;
-    z-index: 100;
+    z-index: 300;
 }
 
 .sidebar.show{
@@ -617,6 +617,296 @@ body{
   display: none;
   z-index: 30;
 }
+
+/* 002 questions */
+.popup--16 {
+  top: 3%;
+  left: 5%;
+  /* width: 600px;
+  height: 680px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 20;
+}
+
+.popup--17 {
+  top: 30%;
+  left: 35%;
+  /* width: 600px;
+  height: 680px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 21;
+}
+
+.popup--18 {
+  top: 70%;
+  left: 15%;
+  /* width: 600px;
+  height: 680px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 22;
+}
+
+.popup--19 {
+  top: 60%;
+  left: 5%;
+  /* width: 600px;
+  height: 680px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 23;
+}
+
+.popup--20 {
+  top: 2%;
+  left: 5%;
+  /* width: 600px;
+  height: 680px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 24;
+}
+
+.popup--21 {
+  top: 30%;
+  left: 23%;
+  /* width: 600px;
+  height: 680px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 25;
+}
+
+.popup--22 {
+  top: 40%;
+  left: 3%;
+  /* width: 600px;
+  height: 680px; */
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 26;
+}
+
+.popup--23 {
+  top: 35%;
+  left: 3%;
+  width: 200px;
+  height: 600px;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 27;
+}
+
+.popup--24 {
+  top: 40%;
+  left: 33%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 28;
+}
+
+.popup--25 {
+  top: 65%;
+  left: 3%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 29;
+}
+
+.popup--26 {
+  top: 25%;
+  left: 15%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 30;
+}
+
+.popup--27 {
+  top: 40%;
+  left: 30%;
+  background: #EBEBEB;
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 30;
+}
+
+.popup--27.ui-state-hover {
+  background: #EBEBEB;
+  border: 0;
+  color: black;
+}
+
+.popup--27 .popup-inner {
+  padding: 50px 25px 20px;
+  font-family: 'SpoqaHanSansRegular';
+}
+
+.popup--27 .popup-name {
+  color: black;
+  font-family: 'SpoqaHanSansBold';
+}
+
+.popup--27 > .popup-inner > a {
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.popup--28 {
+  top: 5%;
+  left: 1%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 20;
+}
+
+.popup--29 {
+  top: 50%;
+  left: 25%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 21;
+}
+
+.popup--30 {
+  top: 10%;
+  left: 1%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 22;
+}
+
+.popup--31 {
+  top: 30%;
+  left: 25%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 23;
+}
+
+.popup--32 {
+  top: 60%;
+  left: 15%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 24;
+}
+
+.popup--33 {
+  top: 1%;
+  left: 33%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 25;
+}
+
+.popup--34 {
+  top: 60%;
+  left: 5%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 26;
+}
+
+.popup--35 {
+  top: 30%;
+  left: 25%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 27;
+}
+
+.popup--36 {
+  top: 70%;
+  left: 15%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 28;
+}
+/* 004 GUIDE BOOK */
+.popup--37 {
+  top: 10%;
+  left: 5%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 20;
+}
+
+.popup--38 {
+  top: 60%;
+  left: 20%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 21;
+}
+
+.popup--39 {
+  top: 22%;
+  left: 23%;
+  /* background: rgb(219, 219, 219); */
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 22;
+}
+
+.popup--44 {
+  top: 22%;
+  left: 13%;
+  width: 600px;
+  height: 680px;
+  border: 0;
+  color: black;
+  display: none;
+  z-index: 20;
+}
+
 
 .popup.show{
     display: flex;
