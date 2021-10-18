@@ -1,7 +1,57 @@
 ::selection {
     background: #1635C8;
     color: #fff;
- }
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-color: #ffffff!important;
+  }
+  .title-text {
+    display: none!important;
+  }
+  .sidebar {
+    display: none!important;
+  }
+  .popup--1{
+    display: none!important;
+  }
+  .popup--2{
+    display: none!important;
+  }
+  .popup--3{
+    display: none!important;
+  }
+  .popup--4{
+    display: none!important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mobile{
+    display: none!important;
+  }
+}
+
+.mobile{
+  
+  text-align: center;
+  font-family: 'SpoqaHanSans';
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 500px;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mobile img{
+  margin: 0 auto;
+  width: 300px;
+  padding-bottom: 40px;
+}
+
 
 *{
     margin:0; padding:0; list-style:none; font-family: 'SpoqaHanSans'; box-sizing:border-box;
