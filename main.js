@@ -731,3 +731,7 @@ function ClosePopup()
   popupCount = 40;
 }
 
+function RemoveWarningMobile()
+{
+  $('.mobile').remove();
+}
