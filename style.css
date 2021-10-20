@@ -657,8 +657,8 @@ body{
 .popup--14 {
   top: 5%;
   left: 10%;
-  width: 600px;
-  height: 680px;
+  width: 400px;
+  height: 420px;
   /* background: rgb(219, 219, 219); */
   border: 0;
   color: black;
@@ -752,7 +752,7 @@ body{
 }
 
 .popup--22 {
-  top: 40%;
+  top: 36%;
   left: 3%;
   /* width: 600px;
   height: 680px; */
