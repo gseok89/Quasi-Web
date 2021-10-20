@@ -395,20 +395,42 @@ var popupCount = 40;
     });
 
             function updateCounterStatus($event_counter, new_count) {
+
+              //이전 팝업 정보와 z-index를 저장
                 if (!$event_counter.hasClass("ui-state-hover")) {
                     $event_counter.addClass("ui-state-hover")
                         .siblings().removeClass("ui-state-hover");
+
+                    $event_counter.addClass("ui-state-hover")
+                      .siblings().css('z-index', '');
                 }
 
                 $event_counter.css('z-index', new_count);
             }
 
             $('.popup').click(function () {
+                $(this).siblings().css('z-index', '');
+
                 var zCount = popupCount++
                 $(this).css({
                     'z-index': zCount
                 });
             });
+
+            (function ($) {
+              $.each(['show', 'hide'], function (i, ev) {
+                var el = $.fn[ev];
+                $.fn[ev] = function () {
+                  this.trigger(ev);
+                  return el.apply(this, arguments);
+                };
+              });
+            })(jQuery);
+          
+          
+          $('.popup').on('show', function(){
+            $(this).siblings().css('z-index', '');
+          });
 
   onmousemove = function(e){
 
@@ -723,6 +745,7 @@ function OpenPopup(targetDate)
         }
       break;
     }
+
 }
 
 function ClosePopup()
