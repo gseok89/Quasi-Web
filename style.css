@@ -29,9 +29,9 @@
   font-family: 'SpoqaHanSansThin', 'sans-serif';
   font-weight: 100;
   src: local('Spoqa Han Sans Thin'),
-  url('./font/Spoqa\ Han\ Sans\ Thin.woff2') format('woff2'),
-  url('./font/Spoqa\ Han\ Sans\ Thin.woff') format('woff'),
-  url('./font/Spoqa\ Han\ Sans\ Thin.ttf') format('truetype');
+  url('./font/Spoqa Han Sans Thin.woff2') format('woff2'),
+  url('./font/Spoqa Han Sans Thin.woff') format('woff'),
+  url('./font/Spoqa Han Sans Thin.ttf') format('truetype');
 }
 
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
